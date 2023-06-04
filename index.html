@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Menú</title> 
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+     <header> 
+    <nav id="menudesplegable">
+      <div class="botonmenu">
+        <span>&#9776</span>
+      </div>
+      <div class="contenedorlogotipo">
+        <img src="img/logo.png" alt="logotipo" class="logo">
+      </div>
+      <ul>
+        <li id="seccion1">Inicio</li>
+        <li id="seccion2">Formulario</li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section id="contenido1">
+      <div id="mensaje">
+        <button id="cerrarmensaje">X</button>
+        <p>Bienvenidos a mi página web</p>
+      </div>
+      <button type="button">Saludar</button>
+   
+  </section>
+
+  <section id="contenido2">
+    <form>         
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <button type="submit">Guardar</button>
+    </form>
+
+    <div id="dataContainer">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo electrónico</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="dataList"></tbody>
+      </table>
+    </div>
+  </section>
+  </div>
+</main>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

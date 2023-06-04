@@ -1,0 +1,187 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#menudesplegable {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #151719;
+  left: -200px;
+  transition: all 500ms linear;
+  float: left;
+}
+
+#menudesplegable.active {
+  left: 0px;
+}
+
+#menudesplegable ul li {
+  color: rgba(230, 230, 230, .9);
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, .3);
+  text-align: center;
+}
+
+.logo {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; 
+  width: 70px;
+  height: 70px;
+}
+
+#menudesplegable .botonmenu {
+  position: absolute;
+  left: 210px;
+  cursor: pointer;
+}
+
+#menudesplegable .botonmenu span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+ }
+ .contenedorlogotipo {
+  padding: 20px;
+  border-bottom: 1px solid rgba(100, 100, 100, .3);
+ }
+
+ #menudesplegable ul li:hover {
+  background-color: #2c2e2c;
+  color: white;
+ cursor: pointer;
+ border-left: 2px solid #4caf50;;
+}
+
+main {
+  padding-top: 200px;
+}
+
+#contenido1 {
+  display: none;
+}
+#mensaje {
+  display: none;
+  top: -10px;
+  position: relative;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#cerrarmensaje{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button[type="button"] {
+  display: block;
+  height: 30px;
+  width: 150px;
+  margin: auto;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  font-weight: bold;
+  background-color: #45a049;
+}
+#contenido2 {
+ display: none;
+}
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  font-weight: bold;
+  background-color: #45a049;
+}
+
+form {
+  max-width: 400px;
+  margin-top: -150px;
+  margin-left: 500px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #404244;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#dataContainer {
+  margin-top: 10px;
+  margin-left: 300px;
+  width: 900px;
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#dataTable th,
+#dataTable td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#dataTable th {
+  background-color: #2c2d30;
+  color: rgb(224, 216, 216);
+}
+
+#dataList button {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 25px;
+  font-size: 15px;
+  border: none;
+  background-color: rgb(252, 44, 44);
+  color: white;
+  padding: 2px;
+  margin-left: 10px;
+}
+
